@@ -4,7 +4,7 @@
         padding:20px; 
         border-radius:20px; 
         margin:0 auto 20px; 
-        width:65%;
+        width:88%;
     }
     
     .panes > div {
@@ -19,7 +19,7 @@
     }
 
     
-    input, textarea, select {font:12px/12px Arial, Helvetica, sans-serif; padding:0;}
+    input, textarea, select {font:14px/14px Arial, Helvetica, sans-serif; padding:0;}
 
     fieldset.action {
         background:#9da2a6; 
@@ -30,10 +30,10 @@
     }
 
 
-    label {font-size:11px; font-weight:bold; color:#666;}
+    label {font-size:14px; font-weight:bold; color:#666;}
     label.opt {font-weight:normal;}
 
-    #footer {font-size:11px;}
+    #footer {font-size:14px;}
     
     
     #pagemenu_container {
@@ -70,15 +70,15 @@
     }
 
     fieldset {
-        width:80%;
+        width:90%;
         margin:auto;
     }
     fieldset .form_description {
         float:left;
-        width:25%;
+        width:33%;
     }
     fieldset .form_content { 
-        width:300px;
+        width:400px;
         float:left;
         padding-left:20px;
         margin-left:20px;
@@ -148,7 +148,7 @@
         font-size:1em;
         color:#300;
         display:block; 
-        text-align:right;
+        text-align:left;
     }
 
     
