@@ -557,7 +557,7 @@ def forcePostProcess():
 				except:
 					logger.info("Couldn't parse " + folder + " into any valid format.")
 					continue
-				if name and album and year:
+				if name and album:
 					
 					myDB = db.DBConnection()
 					release = myDB.action('SELECT AlbumID, ArtistName, AlbumTitle from albums WHERE ArtistName LIKE ? and AlbumTitle LIKE ?', [name, album]).fetchone()

@@ -139,7 +139,6 @@ def extract_data(s):
     #headphones default format
     pattern = re.compile(r'(?P<name>.*?)\s\-\s(?P<album>.*?)\s\[(?P<year>.*?)\]', re.VERBOSE)
     match = pattern.match(s)
-    
     if match:
         name = match.group("name")
         album = match.group("album")
@@ -158,6 +157,18 @@ def extract_data(s):
         return (name, album, year)
     else:
         logger.info("Couldn't parse " + s + " into a valid Newbin format")
+        return (name, album, year)
+        
+    #Default format without year
+    pattern = re.compile(r'(?P<name>.*?)\s\-\s(?P<album>.*)', re.VERBOSE)
+    match = pattern.match(s)
+    if match:
+        name = match.group("name")
+        album = match.group("album")
+        year = ''
+        return (name, album, year)
+    else:
+        logger.info("Couldn't parse " + s + " into a valid format (without year)")
         return (name, album, year)
         
 def extract_logline(s):
